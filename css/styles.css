@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.container {
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+@media (max-width: 1000px) and (min-width: 0px) {
+  .container {
+    font-size: 80%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) and (min-width: 0px) {
+  .container {
+    font-size: 60%;
+  }
+}
+
+.header {
+  position: fixed;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 7rem;
+  z-index: 10;
+}
+.header__container {
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+}
+.header__logo img {
+  width: 4rem;
+}
+.header__logo span {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.header__navbar {
+  display: flex;
+  gap: 4rem;
+}
+.header__navbar a {
+  font-size: 1.3em;
+  color: #0288D1;
+}
+.header__navbar a:hover {
+  color: #212121;
+  font-weight: 600;
+}
+.header__navbar a.active {
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(#f6f6f6, #bad2ee);
+  padding-top: 14rem;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.hero__content {
+  width: min(35rem, 100%);
+  color: #808080;
+  margin: 0 auto;
+}
+.hero__content h1 {
+  font-size: 4.5em;
+}
+.hero__content h1 span {
+  font-weight: 800;
+  line-height: 0;
+}
+.hero__content p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  padding: 1.5rem 0;
+}
+.hero__downloads {
+  display: flex;
+  align-items: center;
+  transform: translateX(-1.5rem);
+}
+@media (max-width: 1000px) and (min-width: 0px) {
+  .hero__downloads {
+    justify-content: center;
+    transform: translateX(0);
+  }
+}
+.hero__downloads img {
+  width: max(10rem, 35%);
+}
+.hero__downloads img:hover {
+  transform: scale(1.2);
+}
+.hero__img {
+  width: max(25vw, 20rem);
+  margin: auto;
+}
+.hero__img img {
+  animation: hero 2s infinite alternate;
+}
+
+@keyframes hero {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.app {
+  background-image: linear-gradient(#bad2ee, #f6f6f6);
+}
+.app__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  width: min(70rem, 100%);
+}
+.app__container .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.app__container .card__img {
+  padding: 2rem;
+  background-color: #0288D1;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.app__container .card__img img {
+  aspect-ratio: 16/9;
+  min-width: 12rem;
+  max-width: 12rem;
+}
+.app__container .card__img img:hover {
+  transform: scale(1.2);
+}
+.app__container .card__text {
+  color: #808080;
+  width: min(35rem, 100%);
+  margin: 0 auto;
+}
+.app__container .card__text h1 {
+  font-size: 1.5em;
+  padding: 1rem 0;
+  font-weight: 800;
+}
+.app__container .card__text p {
+  font-size: 1.2em;
+}
+
+.contact {
+  background-image: linear-gradient(#f6f6f6, #bad2ee);
+}
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.contact__img {
+  margin: 0 auto;
+  width: min(30rem, 100%);
+}
+.contact__content {
+  background-color: white;
+  padding: 2em;
+  border-radius: 20px;
+  width: min(40rem, 100%);
+  margin: 0 auto;
+}
+.contact__content h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+.contact__content p {
+  padding: 1.5em 0;
+}
+.contact__content form {
+  width: 100%;
+}
+.contact__content form input, .contact__content form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #808080;
+  margin-bottom: 1rem;
+}
+.contact__content form textarea {
+  margin-bottom: 2rem;
+}
+.contact__content button {
+  background-color: #0288D1;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.footer {
+  background-color: #0288D1;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  padding: 2rem 8%;
+}
+.footer__logo {
+  font-size: 2em;
+  font-weight: 800;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=styles.css.map */
