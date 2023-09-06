@@ -5,48 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="GoCareer Web Develop Team">
     <title>GoCareer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="page-container">
-        <div class="content-wrap">
-            <div class="nav-bg">
-                <nav class="navegacion">
-                    <a class="navbar__logo">
-                        <div class="logo__image">
-                            <img class="image" src="img/graduation-cap--v1.png" >
-                        </div>
-                    </a>
-                    <a class="navegacion__enlace effects" href="index.html">Inicio</a>
-                    <a class="navegacion__enlace effects" href="gocareer.html">GoCareer</a>
-                    <a class="effects navegacion__enlace" href="contact.html">Contáctanos</a>
-                </nav>
-            </div>
-            <div class="grid">
-                <div class="div__left">
-                    <h2>Estas listo para </br><span>tu futuro?</span></h2>
-                    <p> Actualmente existe una gran cantidad de jóvenes
-                        que ignoran lo importante que es escoger una carrera</br>
-                        universitaria. Creemos que proveyéndoles una opción
-                        simple  para saberlo, lograremos reducir este número.
-                    </p>
-                    <div class="grid2">
-                        <div class="download">
-                            <img class="download__image ios" src="img/astore.png">
-                        </div>
-                        <div class="download">
-                            <img class="download__image gplay" src="img/gplay.png">
-                        </div>
-                    </div>
+
+<header class="header">
+    <div class="header__container container">
+        <a class="header__logo">
+            <img src="img/graduation-cap--v1.png" >
+            <span>GoCareer</span>
+        </a>
+        <nav class="header__navbar">
+            <a class="active" href="#hero">Inicio</a>
+            <a href="#app">App</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero" id="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1>Estas listo para </br><span>tu futuro?</span></h1>
+                <p> Actualmente existe una gran cantidad de jóvenes
+                    que ignoran lo importante que es escoger una carrera</br>
+                    universitaria. Creemos que proveyéndoles una opción
+                    simple  para saberlo, lograremos reducir este número.
+                </p>
+                <div class="hero__downloads">
+                    <img src="img/astore.png" alt="ios">
+                    <img src="img/gplay.png" alt="google play">
                 </div>
-                <div class="div__right">
-                    <img class="inicio__image" src="img/Inicio.png">
+            </div>
+            <div class="hero__img">
+                <img class="inicio__image" src="img/contact.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="app" id="app">
+        <div class="app__container container">
+            <div class="card">
+                <div class="card__img">
+                    <img src="img/test.png" alt="test">
+                </div>
+                <div class="card__text">
+                    <h1>Prueba nuestro test de habilidades</h1>
+                    <p>Disponemos de  un test para conocer las preferencias y habilidades
+                        blandas de nuestros usuarios. De esta forma ofrecemos un servicio
+                        enfocado en cada tipo de usuario.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__text">
+                    <h1>Chatea con profesionales</h1>
+                    <p>Tenemos a disposición un grupo de psicólogos especializados en el tema
+                        de orientación vocacional. Donde podrás obtener un servicio personalizado
+                        y una reunion virtual para  mejores resultados</p>
+                </div>
+                <div class="card__img">
+                    <img src="img/chats.png" alt="chats">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="img/article.png" alt="article">
+                </div>
+                <div class="card__text">
+                    <h1>Únete a nuestra comunidad de estudiantes</h1>
+                    <p>Podrás encontrar artículos e información de profesionales que ejerzan
+                        la carrera que sea adecuada para ti. Tendrás datos de primera mano
+                        e incluso pueden resolver tus dudas mediante las publicaciones.</p>
                 </div>
             </div>
         </div>
-      </div>  
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <div class="contact__img">
+                <img src="img/duda.png" alt="contact">
+            </div>
+            <div class="contact__content">
+                <h1>PONTE EN CONTACTO CON NOSOTROS</h1>
+                <p>Rellena los siguientes campos y te responderemos lo más pronto posible</p>
+                <form action="contact">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea placeholder="Mensaje"></textarea>
+                </form>
+                <button>ENVIAR</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <a class="footer__logo">GoCareer</a>
+    <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <p class="footer__copy">© 2023 GoCareer. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Icons FontAwesome-->
+<script src="https://kit.fontawesome.com/f8b0ea1dab.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
